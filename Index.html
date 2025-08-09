@@ -25,8 +25,12 @@
 
     <br>
     <br>
+        <!--
+        enctype="multipart/form-data" عشان توصل الصوره مو تكست
+         -->
+    
 
-    <form action="https://formsubmit.co/fatemah.alazran@gmail.com" method="POST">
+    <form action="https://formsubmit.co/fatemah.alazran@gmail.com" method="POST" enctype="multipart/form-data">
         <label for="الإسم">الإسم:</label>
         <br>
         <input type="الإسم" name="الإسم" required>
@@ -44,6 +48,10 @@
         <input type="tel" name="رقم الهاتف" id="رقم الهاتف" placeholder="123-456-78" minlength="8" maxlength="8" pattern="[0-9]*" required>
         <br><br>
 
+        <label for="تاريخ الميلاد">تاريخ الميلاد:</label>
+        <br>
+        <input type="date" name="تاريخ الميلاد" id="تاريخ الميلاد">
+        <br><br>
         <div>
             <label for="الدولة">الدولة:</label>
             <select name="الدولة" id="الدولة">
@@ -61,6 +69,11 @@
         <br>
         <textarea name="رساله" id="رساله" style="width: 30%;" placeholder="الرجاء كتابة عنوان الدورة المطلوبة بالأيام المراد الالتحاق بها علما بأن كل الدورات متاحه من يوم الأحد الى الخميس مثال: فن ادارة الوقت يوم الثلاثاء"></textarea>
         <br><br>
+        
+            <h5>في حال تواجد شهادة سابقه الرجاء ارفاقها لتحديد المستوى</h5>
+            <input type="file" name="ملف مرفق" id="ملف مرفق">
+        <br><br>
+        <input type="hidden" name="_next" value="https://fatemahalazran.github.io/Homework-One/thank_you.html">
         <button type="submit">Submit</button>
     </form>
 </body>
