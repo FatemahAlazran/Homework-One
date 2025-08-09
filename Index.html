@@ -6,15 +6,62 @@
 <body>
     <h1>شركة خطوة</h1>
     <p>شركة متخصصة في تقديم دورات تطوير الذات على يد أفضل المدربين الحاصلين على شهادات عالمية معتمدة، وتحرص على تزويد المتدربين بأحدث المهارات والأساليب العملية التي تساهم في تطوير حياتهم الشخصية والمهنية.</p>
-<br>
-    <div style="display: flex;">
-    <h3 style="margin-left:1%; " >فن إدارة الوقت</h3>
-    <img src="img\ادارة_الوقت.png" alt="فن إدارة الوقت" width="250" style="margin-left:5%; ">
-    <h3 style="margin-left:1%; ">مهارات التواصل الفعال </h3>
-    <img src="img\مهارات_التواصل.jpeg" alt="مهارات التواصل الفعال" width="250"  style="margin-left:5%; ">
-    <h3 style="margin-left:1%; ">القيادة وبناء فرق العمل</h3>
-    <img src="img\القيادة.jpg" alt="القيادة" width="250"  style="margin-left:5%; ">
-    </div>
+
     <br>
+
+         <!--
+         style="display: flex;" تخلي كل العناصر داخل الدف يم بعض
+         -->
+    <div style="display: flex;">
+
+        <h3 style="margin-left:1%; " >فن إدارة الوقت</h3>
+        <img src="img\ادارة_الوقت.png" alt="فن إدارة الوقت" width="250" style="margin-left:5%; ">
+        <h3 style="margin-left:1%; ">مهارات التواصل الفعال </h3>
+        <img src="img\مهارات_التواصل.jpeg" alt="مهارات التواصل الفعال" width="250"  style="margin-left:5%; ">
+        <h3 style="margin-left:1%; ">القيادة وبناء فرق العمل</h3>
+        <img src="img\القيادة.jpg" alt="القيادة" width="250"  style="margin-left:5%; ">
+        
+    </div>
+
+    <br>
+    <br>
+
+    <form action="https://formsubmit.co/fatemah.alazran@gmail.com" method="POST">
+        <label for="الإسم">الإسم:</label>
+        <br>
+        <input type="الإسم" name="الإسم" required>
+        <br> <br>
+        <label for="البريد الإلكتروني">البريد الإلكتروني:</label>
+        <br>
+        <input type="email" name="البريد الإلكتروني" id="البريد الإلكتروني" placeholder="aaa@gmail.com">
+        <br><br>
+        <label for="رقم الهاتف">رقم الهاتف:</label>
+        <br>
+         <!--
+         maxlength تحدد جم حرف تستقبل 
+          pattern="[0-9]*" اذا اليوزر ضغط زر الارسال مايخليه الا اذا دخل ارقام
+         -->
+        <input type="tel" name="رقم الهاتف" id="رقم الهاتف" placeholder="123-456-78" minlength="8" maxlength="8" pattern="[0-9]*" required>
+        <br><br>
+
+        <div>
+            <label for="الدولة">الدولة:</label>
+            <select name="الدولة" id="الدولة">
+                <option value="الكويت">الكويت</option>
+                <option value="المملكة العربية السعودية">المملكة العربية السعودية</option>
+                <option value="مصر">مصر</option>
+                <option value="سوريا">سوريا</option>
+                <option value="أخرى">أخرى</option>
+            </select>
+        </div>
+
+        <br>
+
+        <label for="رساله">طلب الالتحاق:</label>
+        <br>
+        <textarea name="رساله" id="رساله" style="width: 30%;" placeholder="الرجاء كتابة عنوان الدورة المطلوبة بالأيام المراد الالتحاق بها علما بأن كل الدورات متاحه من يوم الأحد الى الخميس مثال: فن ادارة الوقت يوم الثلاثاء"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
